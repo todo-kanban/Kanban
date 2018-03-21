@@ -1,0 +1,24 @@
+{
+  "name": "gh-organizacion",
+  "version": "1.0.0",
+  "description": "kanban",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "browserify ./src/js/app.js -o ./public/bundle.js",
+    "stylus": "stylus ./src/css/main.styl -o ./public/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run bundle && npm run stylus"
+  },
+  "keywords": [
+    "node.js",
+    "npm",
+    "trello",
+    "kanban"
+  ],
+  "author": "bundlebabies",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^16.1.1",
+    "stylus": "^0.54.5"
+  }
+}
