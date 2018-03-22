@@ -9,7 +9,7 @@ const check = {
 
         let todoId = `todo-${check.counter + 1}`;
 
-        const $todoContainer = $('<div />').addClass('col s12 m6 todo');
+        const $todoContainer = $('<div />').addClass('col s12 m12 todo');
         const $todoCard = $('<div />').addClass('card-panel');
         const $todoCheckbox = $('<input type="checkbox" />').attr('id', todoId);
         const $todoText = $('<label />').attr('for', todoId).text(todo);

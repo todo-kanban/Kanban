@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <form class="col s12" id="todo-form">
+            <form class="container-form col s12 m6" id="todo-form">
                 <div class="row">
                     <div class="input-field col s12">
                         <textarea id="todo" class="materialize-textarea"></textarea>
@@ -21,15 +21,19 @@
                 </div>
                 <button type="submit" class="waves-effect waves-light btn">Agregar</button>
             </form>
-        </div>
-        <div class="row" id="todos">
-            <div class="col s12 m6 todo">
+            <div class="container-taks col s12 m6" id="todos">
+              <div class="row">
+                <a class="col s12 m5 btn">Tareas activas</a>
+                <a class="col s12 m6 offset-m1 btn">Tareas terminadas</a>
+              </div>
+              <div class="col s12 m12 todo">
                 <div class="card-panel">
-                    <input type="checkbox" id="tarea-1" />
-                    <label for="tarea-1">
-                        Tarea 1.
-                    </label>
+                  <input type="checkbox" id="tarea-1" />
+                  <label for="tarea-1">
+                    Tarea 1.
+                  </label>
                 </div>
+              </div>
             </div>
         </div>
     </div>
