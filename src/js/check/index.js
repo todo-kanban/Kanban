@@ -1,5 +1,6 @@
 let borrar = require('../erase');
 const tasksType = require('../tasks');
+const priorities = require('../priorities');
 
 
 
@@ -11,8 +12,8 @@ const check = {
         $('#finish').click(tasksType.finish);
         $('#active').dblclick(tasksType.allTasks);
         $('#finish').dblclick(tasksType.allTasks);
-
-
+        $('select').change(priorities.selectColor);
+        
     },
     addTodo(event) {
         event.preventDefault();
@@ -27,8 +28,10 @@ const check = {
         const $todoText = $('<label />').attr('for', todoId).text(todo);
         const $row = $("<div />").addClass("row");
         const $erase = $("<a />").addClass("col s2 m2 btn right").text("x").click(borrar);
+        const $priorites = $('<a />').addClass("col s2 m2 btn right waves-effect waves-light btn modal-trigger").attr('href','#modal1').text("edit").click(priorities.edit);
 
         $row.append($erase);
+        $row.append($priorites);
         $todoCard.append($row);
         $todoCard.append($todoCheckbox);
         $todoCard.append($todoText);
