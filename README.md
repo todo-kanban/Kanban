@@ -2,7 +2,7 @@
 ***
 Web page en la que puedes asignar actividades a una tarea en especifico.
 ##Estructura de la página.
-![Kanban estructure](#)
+![Kanban estructure](./src/images/structure.png)
 
 ## Previo al código
 
